@@ -14,7 +14,6 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Header */
 header {
     background: linear-gradient(90deg, #0f172a, #1e293b);
     padding: 50px 20px;
@@ -32,13 +31,11 @@ h2 {
     margin-top: 50px;
 }
 
-/* Section */
 section {
     padding: 30px 10%;
     animation: fadeUp 1s ease-in-out;
 }
 
-/* Cards */
 .card {
     background-color: #1e293b;
     padding: 25px;
@@ -48,23 +45,21 @@ section {
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 20px rgba(56,189,248,0.2);
+    transform: translateY(-6px);
+    box-shadow: 0px 10px 25px rgba(56,189,248,0.25);
 }
 
-/* Skill Badge */
 .badge {
     display: inline-block;
     background-color: #38bdf8;
     color: #0f172a;
-    padding: 5px 10px;
+    padding: 6px 12px;
     border-radius: 20px;
     font-size: 12px;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
-/* Links */
 a {
     color: #38bdf8;
     text-decoration: none;
@@ -74,7 +69,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -82,7 +76,6 @@ footer {
     margin-top: 50px;
 }
 
-/* Animations */
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -117,16 +110,25 @@ footer {
 
 <header>
     <h1>João Alejandro Lins Silva</h1>
-    <p>Estudante de Cibersegurança | Recife - PE</p>
+    <p>Estudante de Cibersegurança - 2º Período</p>
+    <p>Universidade Estácio de Sá | Recife - PE</p>
     <p>Disponível para Estágio | Preferência Home Office</p>
 </header>
 
 <section>
     <h2>Perfil Profissional</h2>
     <p>
-        Estudante de Cibersegurança com foco em Redes e Segurança da Informação.
-        Base sólida em protocolos, criptografia e infraestrutura de redes,
-        aliada a prática em ambientes simulados.
+        Estudante do 2º período de Cibersegurança na Universidade Estácio de Sá,
+        com foco em Redes de Computadores e Segurança da Informação.
+    </p>
+    <p>
+        Base sólida em protocolos de comunicação, criptografia, segmentação de redes
+        e análise de vulnerabilidades, aliando teoria acadêmica à prática
+        em ambientes simulados como Cisco Packet Tracer e plataformas de desafios técnicos.
+    </p>
+    <p>
+        Busco oportunidade de estágio para aplicar e expandir conhecimentos
+        em monitoramento de redes, infraestrutura e segurança ofensiva e defensiva.
     </p>
 </section>
 
@@ -137,11 +139,17 @@ footer {
         <div class="badge">Redes</div>
         <h3>Redes de Computadores</h3>
         <ul>
-            <li>Modelo OSI e arquitetura TCP/IP</li>
-            <li>Configuração no Cisco Packet Tracer</li>
-            <li>Endereçamento IP e Sub-redes</li>
+            <li>Modelo OSI e arquitetura TCP/IP aplicados na prática</li>
+            <li>Configuração de redes no Cisco Packet Tracer</li>
+            <li>Endereçamento IP, Sub-redes e segmentação</li>
             <li>Configuração básica de roteadores e switches</li>
+            <li>Análise de tráfego entre dispositivos</li>
         </ul>
     </div>
 
-    <div c
+    <div class="card">
+        <div class="badge">Segurança</div>
+        <h3>Protocolos e Segurança</h3>
+        <ul>
+            <li>Funcionamento de HTTP e HTTPS</li>
+            <li>SSL/TLS e criptografia

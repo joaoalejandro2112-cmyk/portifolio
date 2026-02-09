@@ -1,67 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Alejandro Lins Silva | Portfólio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>João Alejandro Lins Silva | Portfólio</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #0f172a;
-            color: #e2e8f0;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    scroll-behavior: smooth;
+}
 
-        header {
-            background-color: #1e293b;
-            padding: 40px 20px;
-            text-align: center;
-        }
+/* Header */
+header {
+    background: linear-gradient(90deg, #0f172a, #1e293b);
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeDown 1s ease-in-out;
+}
 
-        h1 {
-            margin: 0;
-            font-size: 28px;
-        }
+h1 {
+    margin: 0;
+    font-size: 30px;
+}
 
-        h2 {
-            color: #38bdf8;
-            margin-top: 40px;
-        }
+h2 {
+    color: #38bdf8;
+    margin-top: 50px;
+}
 
-        section {
-            padding: 20px 10%;
-        }
+/* Section */
+section {
+    padding: 30px 10%;
+    animation: fadeUp 1s ease-in-out;
+}
 
-        ul {
-            line-height: 1.6;
-        }
+/* Cards */
+.card {
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        .card {
-            background-color: #1e293b;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(56,189,248,0.2);
+}
 
-        a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
+/* Skill Badge */
+.badge {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #0f172a;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1e293b;
-            margin-top: 40px;
-        }
+/* Links */
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
 
-        @media (max-width: 768px) {
-            section {
-                padding: 20px;
-            }
-        }
-    </style>
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e293b;
+    margin-top: 50px;
+}
+
+/* Animations */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+}
+</style>
 </head>
 
 <body>
@@ -76,8 +125,8 @@
     <h2>Perfil Profissional</h2>
     <p>
         Estudante de Cibersegurança com foco em Redes e Segurança da Informação.
-        Experiência prática em ambientes simulados e fundamentos sólidos em protocolos,
-        criptografia e infraestrutura de redes.
+        Base sólida em protocolos, criptografia e infraestrutura de redes,
+        aliada a prática em ambientes simulados.
     </p>
 </section>
 
@@ -85,6 +134,7 @@
     <h2>Competências Técnicas</h2>
 
     <div class="card">
+        <div class="badge">Redes</div>
         <h3>Redes de Computadores</h3>
         <ul>
             <li>Modelo OSI e arquitetura TCP/IP</li>
@@ -94,41 +144,4 @@
         </ul>
     </div>
 
-    <div class="card">
-        <h3>Protocolos e Segurança</h3>
-        <ul>
-            <li>Funcionamento de HTTP e HTTPS</li>
-            <li>SSL/TLS e fundamentos de criptografia</li>
-            <li>Noções de firewall e controle de acesso</li>
-            <li>Conceito de vulnerabilidades</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h3>Desenvolvimento Web</h3>
-        <ul>
-            <li>HTML5 semântico</li>
-            <li>CSS3 e responsividade</li>
-            <li>Criação de páginas estáticas organizadas</li>
-        </ul>
-    </div>
-</section>
-
-<section>
-    <h2>Projeto em Destaque</h2>
-    <div class="card">
-        <h3>Laboratório de Segmentação de Rede</h3>
-        <p>
-            Simulação de rede com segmentação por sub-redes no Cisco Packet Tracer,
-            aplicando conceitos de IP, comunicação entre dispositivos e análise de tráfego.
-        </p>
-    </div>
-</section>
-
-<section>
-    <h2>Contato</h2>
-    <p>Email profissional:</p>
-    <p>
-        <a href="mailto:joaoalejandro2112@gmail.com">
-            joaoalejandro2112@gmail.com
-        </a>
+    <div c
